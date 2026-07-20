@@ -1,6 +1,6 @@
 package practice2.task10;
 
-public class Miles implements Distance {
+public class Miles {
 
     private double miles;
 
@@ -8,8 +8,16 @@ public class Miles implements Distance {
         this.miles = miles;
     }
 
-    @Override
-    public double getDistance() {
+    public double getMiles() {
         return miles;
+    }
+
+    public void setMiles(double miles) {
+        this.miles = miles;
+    }
+
+    @Override
+    public String toString() {
+        return miles + " миль";
     }
 }

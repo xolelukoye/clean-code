@@ -2,9 +2,9 @@ package practice2.task12;
 
 public class SmartHomeFacade {
 
-    private Light light;
-    private Conditioner conditioner;
-    private SecuritySystem securitySystem;
+    private final Light light;
+    private final Conditioner conditioner;
+    private final SecuritySystem securitySystem;
 
     public SmartHomeFacade() {
         light = new Light();

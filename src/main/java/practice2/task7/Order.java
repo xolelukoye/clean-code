@@ -5,14 +5,35 @@ import java.util.List;
 
 public class Order {
 
-    private List<String> items;
+    private final List<String> items;
     private int discount;
     private String payMethod;
 
     private Order(OrderBuilder orderBuilder) {
-        this.items = orderBuilder.items;
+        this.items = List.copyOf(orderBuilder.items);
         this.discount = orderBuilder.discount;
         this.payMethod = orderBuilder.payMethod;
+    }
+
+    public List<String> getItems() {
+        return items;
+    }
+
+    public int getDiscount() {
+        return discount;
+    }
+
+    public String getPayMethod() {
+        return payMethod;
+    }
+
+    @Override
+    public String toString() {
+        return "Order{" +
+                "items=" + items +
+                ", discount=" + discount + "%" +
+                ", payMethod='" + payMethod + '\'' +
+                '}';
     }
 
     static class OrderBuilder {

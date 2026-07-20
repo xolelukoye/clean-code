@@ -1,9 +1,12 @@
 package practice2.task9;
 
-public class PDFProcessor implements DocumentProcessor {
+public class PDFProcessor {
 
-    @Override
-    public void process() {
-        System.out.println("Обработка документа в формате .pdf");
+    public void readPdf() {
+        System.out.println("Чтение PDF файла");
+    }
+
+    public void convertToDoc() {
+        System.out.println("Конвертация формата PDF -> DOC");
     }
 }

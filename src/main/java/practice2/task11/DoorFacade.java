@@ -2,9 +2,9 @@ package practice2.task11;
 
 public class DoorFacade {
 
-    private DoorOpen doorOpen;
-    private DoorClose doorClose;
-    private DoorLock doorLock;
+    private final DoorOpen doorOpen;
+    private final DoorClose doorClose;
+    private final DoorLock doorLock;
 
     public DoorFacade() {
         doorOpen = new DoorOpen();

@@ -2,7 +2,7 @@ package practice2.task10;
 
 public class MilesToKilometersAdapter implements Distance {
 
-    private Miles miles;
+    private final Miles miles;
 
     public MilesToKilometersAdapter(Miles miles) {
         this.miles = miles;
@@ -10,6 +10,6 @@ public class MilesToKilometersAdapter implements Distance {
 
     @Override
     public double getDistance() {
-        return miles.getDistance() * 1.60934;
+        return miles.getMiles() * 1.60934;
     }
 }

@@ -14,6 +14,32 @@ public class Character {
         this.mana = characterBuilder.mana;
     }
 
+    public int getHealth() {
+        return health;
+    }
+
+    public int getDamage() {
+        return damage;
+    }
+
+    public int getArmor() {
+        return armor;
+    }
+
+    public int getMana() {
+        return mana;
+    }
+
+    @Override
+    public String toString() {
+        return "Character{" +
+                "health=" + health +
+                ", damage=" + damage +
+                ", armor=" + armor +
+                ", mana=" + mana +
+                '}';
+    }
+
     static class CharacterBuilder {
 
         private int health;

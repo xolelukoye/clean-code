@@ -12,4 +12,13 @@ public class Kilometers implements Distance {
     public double getDistance() {
         return kilometers;
     }
+
+    public void setKilometers(double kilometers) {
+        this.kilometers = kilometers;
+    }
+
+    @Override
+    public String toString() {
+        return kilometers + " км";
+    }
 }
